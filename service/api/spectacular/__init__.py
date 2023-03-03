@@ -1,0 +1,1 @@
+from .ulrs import urlpatterns

@@ -1,0 +1,1 @@
+from .spectacular.ulrs import SpectacularAPIView
