@@ -5,7 +5,7 @@ from photos.commons.responses import success_response
 
 
 class PhotoCreateSerializer(serializers.ModelSerializer):
-    file = file = serializers.ImageField(write_only=True)
+    file =  serializers.ImageField(write_only=True)
     id = serializers.UUIDField(read_only=True)
     
     class Meta:
