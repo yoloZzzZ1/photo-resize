@@ -32,7 +32,7 @@ class PhotoPartialUpdateSerializer(serializers.ModelSerializer):
 
     def update(self, instance, validated_data):
         width = self.validated_data.pop('width')
-        height = validated_data.pop('height')
+        height = self.validated_data.pop('height')
         resize_photo.delay(width=width, height=height, id=instance.id)
         return success_response
 
