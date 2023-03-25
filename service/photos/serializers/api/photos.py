@@ -37,4 +37,4 @@ class PhotoPartialUpdateSerializer(serializers.ModelSerializer):
         return success_response
 
 class SuccessResponseSerializerMixin(serializers.Serializer):
-    succes=serializers.BooleanField()
+    success=serializers.BooleanField()
